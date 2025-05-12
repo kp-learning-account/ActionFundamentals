@@ -14,7 +14,9 @@ jobs:
 
       - name: Run my own container action
         id: hello-action
-        uses: ./hello-world-docker-action
+        uses: hello-world-docker-action
+          with:
+            context: .
         with:
           who-to-greet: 'me'
 
