@@ -15,9 +15,8 @@ jobs:
       - name: Run my own container action
         id: hello-action
         uses: hello-world-docker-action
-          with:
-            context: .
         with:
+          context: .
           who-to-greet: 'me'
 
       - name: Output time set in the container
